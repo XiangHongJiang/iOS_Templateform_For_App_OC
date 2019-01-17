@@ -9,35 +9,24 @@
 #ifndef App_Header_Define_h
 #define App_Header_Define_h
 
-//NSUserDefaults
-#define  UD [NSUserDefaults standardUserDefaults]
-#define  UD_SET(_Value,_Key)   [UD setObject:_Value forKey:_Key]
-#define  UD_GET(_Key)  [UD objectForKey:_Key]
-#define  SharedApplication  [UIApplication sharedApplication]
-// 添加圆角
-#define XHBorderRadius(View, Radius, Width, Color)\
-[View.layer setCornerRadius:(Radius)];\
-[View.layer setMasksToBounds:YES];\
-[View.layer setBorderWidth:(Width)];\
-[View.layer setBorderColor:Color.CGColor]
-//比例宽
+//  是否是iPhoneX
+#define iPhoneX (([UIScreen mainScreen].bounds.size.height / [UIScreen mainScreen].bounds.size.width) > 1.78 ? YES : NO)
+//  状态栏高度
+#define STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
+//  导航栏高度
+#define NAVIGATION_BAR_HEIGHT (iPhoneX ? 88.f : 64.f)
+//  TabBar高度
+#define TAB_BAR_HEIGHT (iPhoneX ? (49.f+34.f) : 49.f)
+//  Home Indicator高度
+#define HOME_INDICATOR_HEIGHT (iPhoneX ? 34.f : 0.f)
+
+//  比例宽
 #define RATEWIDTH_iPhone6(WIDTH) (WIDTH/375.0) * [[UIScreen mainScreen] bounds].size.width
-//比例高
+//  比例高
 #define RATEHEIGHT_iPhone6(HEIGHT) (HEIGHT/667.0) * [[UIScreen mainScreen] bounds].size.height
-// 屏幕宽高：YYkit 中定义，因此注释
+//  屏幕宽高：YYkit 中定义，因此注释
 //#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 //#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-
-// 是否是iPhoneX
-#define iPhoneX (([UIScreen mainScreen].bounds.size.height / [UIScreen mainScreen].bounds.size.width) > 1.78 ? YES : NO)
-// 状态栏高度
-#define STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
-// 导航栏高度
-#define NAVIGATION_BAR_HEIGHT (iPhoneX ? 88.f : 64.f)
-// TabBar高度
-#define TAB_BAR_HEIGHT (iPhoneX ? (49.f+34.f) : 49.f)
-// Home Indicator
-#define HOME_INDICATOR_HEIGHT (iPhoneX ? 34.f : 0.f)
 
 //  打印输出
 #ifdef DEBUG
@@ -60,8 +49,21 @@
 #define UIColorHex_Aphpa(hex,alpha)   [UIColor hexStringToColor:hex alpha:alpha]
 #define UIColorHexStr(hex)   [UIColor hexStringToColor:hex]
 
-//app 配置
+//  App 配置
 #define APP_Version [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define APP_Channel @"AppStore"
+
+
+//  NSUserDefaults
+#define  UD [NSUserDefaults standardUserDefaults]
+#define  UD_SET(_Value,_Key)   [UD setObject:_Value forKey:_Key]
+#define  UD_GET(_Key)  [UD objectForKey:_Key]
+#define  SharedApplication  [UIApplication sharedApplication]
+//  添加圆角
+#define XHBorderRadius(View, Radius, Width, Color)\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:Color.CGColor]
 
 #endif /* App_Header_Define_h */

@@ -14,7 +14,7 @@ UIKIT_EXTERN NSString *const kClassName;
 UIKIT_EXTERN NSString *const kTabbarImage;
 UIKIT_EXTERN NSString *const kTabbarSelectImage;
 UIKIT_EXTERN NSString *const kTabbarTitle;
-UIKIT_EXTERN NSString *const kVCType;// Controller 类型，是Xib，还是Class，默认不传为class
+UIKIT_EXTERN NSString *const kVCType;
 
 #pragma mark - UINavigationController+RoutePush.h
 UIKIT_EXTERN NSString *const kStoryBoardName;

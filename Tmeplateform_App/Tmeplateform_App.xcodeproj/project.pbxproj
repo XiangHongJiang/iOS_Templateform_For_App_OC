@@ -208,8 +208,8 @@
 		FC258A6F21F028FF00B80DC0 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				FC258A7021F028FF00B80DC0 /* ThirdFramework */,
 				FC258A7321F028FF00B80DC0 /* Classes */,
+				FC258A7021F028FF00B80DC0 /* ThirdFramework */,
 				FC258ACE21F028FF00B80DC0 /* Resources */,
 				FC258AD021F028FF00B80DC0 /* Utils */,
 			);

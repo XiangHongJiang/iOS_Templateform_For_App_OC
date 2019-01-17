@@ -65,15 +65,7 @@
     /** 注册Cell*/
     [self.tableView registCellWithClassArray:@[@"AppBaseTableViewCell"]];
     
-    /** 添加视图*/
-//    if (@available(iOS 11.0, *)) {
-//        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-//        //        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
-//        //        self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-//
-//    } else {
-//        // Fallback on earlier versions
-//    }
+
 }
 /** 返回cell重用标识符：子类重写 */
 - (NSString *)cellIdentifyAtIndexPath:(NSIndexPath *)indexPath {

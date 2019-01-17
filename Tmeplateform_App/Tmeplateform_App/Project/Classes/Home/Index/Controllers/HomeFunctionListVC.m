@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger,Function_Type){
 - (void)loginStateChangeWithOut:(BOOL)isOut {
     
     if (isOut) {
-        
+        AppManager.instance.userLoginInfo.userId = @"";
         [AppManager.instance saveUserLoginInfo];
     }
     LoginVC *login = [LoginVC new];

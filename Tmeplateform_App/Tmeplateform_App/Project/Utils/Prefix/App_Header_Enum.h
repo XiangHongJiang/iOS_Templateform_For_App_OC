@@ -9,11 +9,13 @@
 #ifndef App_Header_Enum_h
 #define App_Header_Enum_h
 
-#pragma mark - AppVCType :VC的加载类型
-typedef NS_ENUM(NSInteger, APPVCType) {//viewController加载类型
-    APPVCType_Default,//class
+#pragma mark - AppVCType :ViewController 的加载类型
+typedef NS_ENUM(NSInteger, APPVCType) {
+    
+    APPVCType_Default,//Class
     APPVCType_XIB,//Xib
     APPVCType_StoryBoard,//SB
+    
 };
 
 
