@@ -45,11 +45,11 @@ typedef NS_ENUM(NSInteger,Function_Type){
     
     NSArray *functionArray = @[
                                    @{kTitle:@"--退出登录--",@"type":@(Function_Type_Login)},
-                                   @{kTitle:@"0.自定义表格绘制",@"vcName":@"CustomDrawExampleTableViewController",@"type":@(Function_Type_CustomDrawTable_Demo)},
-                                   @{kTitle:@"1.音频波形图",@"vcName":@"WaverExampleTableViewController",@"type":@(Function_Type_CustomDrawTable_Demo)},
-                                   @{kTitle:@"2.操作引导",@"vcName":@"GuideTipDemoTableViewController",@"type":@(Function_Type_GuideTip_Demo)},
-                                   @{kTitle:@"3.日志记录",@"vcName":@"LogsExampleTableViewController",@"type":@(Function_Type_Logs_CocoaLumberjack_Demo)},
-                                   @{kTitle:@"4.二维码",@"vcName":@"CustomQRCodeDemoViewController",@"type":@(Function_Type_Logs_CustomQRCodeProduct)},
+                                   @{kTitle:@"0.自定义表格绘制",kClassName:@"FirstVC",@"type":@(Function_Type_CustomDrawTable_Demo)},
+                                   @{kTitle:@"1.音频波形图",kClassName:@"WaverExampleTableViewController",@"type":@(Function_Type_CustomDrawTable_Demo)},
+                                   @{kTitle:@"2.操作引导",kClassName:@"GuideTipDemoTableViewController",@"type":@(Function_Type_GuideTip_Demo)},
+                                   @{kTitle:@"3.日志记录",kClassName:@"LogsExampleTableViewController",@"type":@(Function_Type_Logs_CocoaLumberjack_Demo)},
+                                   @{kTitle:@"4.二维码",kClassName:@"CustomQRCodeDemoViewController",@"type":@(Function_Type_Logs_CustomQRCodeProduct)},
 
                                    
 
@@ -66,7 +66,7 @@ typedef NS_ENUM(NSInteger,Function_Type){
     NSDictionary *functionDic = [[self.viewModel.allDataDic objectForKey:@(indexPath.section)] safeObjectAtIndex:indexPath.row];
     Function_Type type = [functionDic[@"type"] integerValue];//type
     NSString *title = functionDic[kTitle]?functionDic[kTitle]:@"";//name
-    NSString *vcName = functionDic[@"vcName"];//vcName
+    NSString *vcName = functionDic[kClassName];//vcName
    
     switch (type) {
             //case 特殊处理

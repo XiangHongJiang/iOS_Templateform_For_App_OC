@@ -47,6 +47,7 @@
 		FC258B4421F028FF00B80DC0 /* TouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258B0C21F028FF00B80DC0 /* TouchID.m */; };
 		FC258B4521F028FF00B80DC0 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258B0D21F028FF00B80DC0 /* AppManager.m */; };
 		FC258B4621F028FF00B80DC0 /* XHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258B0F21F028FF00B80DC0 /* XHTools.m */; };
+		FC258BD821F05E2A00B80DC0 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258BD721F05E2A00B80DC0 /* FirstVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +134,8 @@
 		FC258B0D21F028FF00B80DC0 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 		FC258B0F21F028FF00B80DC0 /* XHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHTools.m; sourceTree = "<group>"; };
 		FC258B1021F028FF00B80DC0 /* XHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTools.h; sourceTree = "<group>"; };
+		FC258BD621F05E2A00B80DC0 /* FirstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		FC258BD721F05E2A00B80DC0 /* FirstVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,7 @@
 		FC258A7421F028FF00B80DC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FC258BCF21F05DBA00B80DC0 /* Part0 */,
 				FC258AB121F028FF00B80DC0 /* Index */,
 			);
 			path = Home;
@@ -245,8 +249,8 @@
 		FC258AB121F028FF00B80DC0 /* Index */ = {
 			isa = PBXGroup;
 			children = (
-				FC258AB221F028FF00B80DC0 /* Models */,
 				FC258AB321F028FF00B80DC0 /* Controllers */,
+				FC258AB221F028FF00B80DC0 /* Models */,
 				FC258AB621F028FF00B80DC0 /* Views */,
 			);
 			path = Index;
@@ -516,6 +520,39 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		FC258BCF21F05DBA00B80DC0 /* Part0 */ = {
+			isa = PBXGroup;
+			children = (
+				FC258BD021F05DDF00B80DC0 /* Controllers */,
+				FC258BD421F05DDF00B80DC0 /* Models */,
+				FC258BD321F05DDF00B80DC0 /* Views */,
+			);
+			path = Part0;
+			sourceTree = "<group>";
+		};
+		FC258BD021F05DDF00B80DC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC258BD621F05E2A00B80DC0 /* FirstVC.h */,
+				FC258BD721F05E2A00B80DC0 /* FirstVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC258BD321F05DDF00B80DC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC258BD421F05DDF00B80DC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -639,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC258B2621F028FF00B80DC0 /* HomeFunctionListVC.m in Sources */,
+				FC258BD821F05E2A00B80DC0 /* FirstVC.m in Sources */,
 				FC258B4021F028FF00B80DC0 /* AppBaseViewController.m in Sources */,
 				FC258B2A21F028FF00B80DC0 /* AppUserInfoModel.m in Sources */,
 				FC258B3B21F028FF00B80DC0 /* NSObject+Extension.m in Sources */,
