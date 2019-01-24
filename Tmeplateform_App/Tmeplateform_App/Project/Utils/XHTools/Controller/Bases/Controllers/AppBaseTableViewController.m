@@ -101,7 +101,7 @@
     /** 获取Id*/
     NSString *identify = [self cellIdentifyAtIndexPath:indexPath];
     /** 获取Cell*/
-    AppBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify forIndexPath:indexPath];
+    AppBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify.length?identify:@"AppBaseTableViewCell" forIndexPath:indexPath];
     /** 配置Cell*/
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.tag = indexPath.section*10000 + indexPath.row;

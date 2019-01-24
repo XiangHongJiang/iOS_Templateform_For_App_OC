@@ -47,7 +47,7 @@
     if ([super initWithFrame:frame style:style]) {
         
         [self registerClass:[AppBaseTableViewCell class] forCellReuseIdentifier:NSStringFromClass([AppBaseTableViewCell class])];
-        
+
         [self initData];
     }
     
