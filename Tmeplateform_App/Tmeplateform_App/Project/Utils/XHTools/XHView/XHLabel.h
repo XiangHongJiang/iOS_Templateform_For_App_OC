@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) UIColor *strokeColor;
 @property (assign,nonatomic) CGFloat strokeWidth;
 
+
+- (void)setTextShadowWithColor:(UIColor *)shadowColor shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset andShadowOpacity:(CGFloat)opacity;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

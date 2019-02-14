@@ -62,6 +62,12 @@
         [super drawTextInRect:rect];
     }
 }
-
+- (void)setTextShadowWithColor:(UIColor *)shadowColor shadowRadius:(CGFloat)shadowRadius shadowOffset:(CGSize)shadowOffset andShadowOpacity:(CGFloat)opacity {
+    
+    self.layer.shadowColor = shadowColor.CGColor;
+    self.layer.shadowRadius = shadowRadius;
+    self.layer.shadowOffset = shadowOffset;
+    self.layer.opacity = opacity;
+}
 
 @end

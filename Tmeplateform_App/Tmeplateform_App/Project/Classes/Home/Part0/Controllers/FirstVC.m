@@ -20,16 +20,14 @@
     // Do any additional setup after loading the view.
     
     XHLabel *label  = [[XHLabel alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 100)];
-    label.textColor = [UIColor redColor];
+    label.textColor = [UIColor cyanColor];
     label.font = [UIFont systemFontOfSize:32];
     label.text = @"测试一下看看";
     self.tableView.tableHeaderView = label;
-    
+
     //发光
-    label.layer.shadowRadius = 2;
-    label.layer.shadowColor = [UIColor redColor].CGColor;
-    label.layer.shadowOffset = CGSizeMake(0, 0);
-    label.layer.shadowOpacity = 1.0;
+    [label setTextShadowWithColor:[UIColor redColor] shadowRadius:2 shadowOffset:CGSizeMake(0, 0) andShadowOpacity:1.0];
+
     
     [self.viewModel addDatasFromArray:@[@"1",@"2",@"3"] atSection:0];
     

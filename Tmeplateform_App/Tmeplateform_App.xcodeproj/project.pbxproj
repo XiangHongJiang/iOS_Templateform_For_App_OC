@@ -407,6 +407,8 @@
 		FC258ADB21F028FF00B80DC0 /* XHView */ = {
 			isa = PBXGroup;
 			children = (
+				FCD666E12215383F007E39C6 /* XHLabel.h */,
+				FCD666E22215383F007E39C6 /* XHLabel.m */,
 				FC258ADC21F028FF00B80DC0 /* XHShowTimePicker.h */,
 				FC258ADD21F028FF00B80DC0 /* XHDrawer.m */,
 				FC258ADE21F028FF00B80DC0 /* YHResetFrameButton.h */,
@@ -538,8 +540,6 @@
 			children = (
 				FC258BD621F05E2A00B80DC0 /* FirstVC.h */,
 				FC258BD721F05E2A00B80DC0 /* FirstVC.m */,
-				FCD666E12215383F007E39C6 /* XHLabel.h */,
-				FCD666E22215383F007E39C6 /* XHLabel.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
