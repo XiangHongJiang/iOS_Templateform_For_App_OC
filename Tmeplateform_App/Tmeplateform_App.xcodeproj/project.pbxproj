@@ -48,6 +48,7 @@
 		FC258B4521F028FF00B80DC0 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258B0D21F028FF00B80DC0 /* AppManager.m */; };
 		FC258B4621F028FF00B80DC0 /* XHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258B0F21F028FF00B80DC0 /* XHTools.m */; };
 		FC258BD821F05E2A00B80DC0 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258BD721F05E2A00B80DC0 /* FirstVC.m */; };
+		FCD666E32215383F007E39C6 /* XHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD666E22215383F007E39C6 /* XHLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,8 @@
 		FC258B1021F028FF00B80DC0 /* XHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTools.h; sourceTree = "<group>"; };
 		FC258BD621F05E2A00B80DC0 /* FirstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
 		FC258BD721F05E2A00B80DC0 /* FirstVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		FCD666E12215383F007E39C6 /* XHLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHLabel.h; sourceTree = "<group>"; };
+		FCD666E22215383F007E39C6 /* XHLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +538,8 @@
 			children = (
 				FC258BD621F05E2A00B80DC0 /* FirstVC.h */,
 				FC258BD721F05E2A00B80DC0 /* FirstVC.m */,
+				FCD666E12215383F007E39C6 /* XHLabel.h */,
+				FCD666E22215383F007E39C6 /* XHLabel.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 				FC258B4321F028FF00B80DC0 /* AppBaseTableView.m in Sources */,
 				FC258B3121F028FF00B80DC0 /* XHDrawer.m in Sources */,
 				FC258B2721F028FF00B80DC0 /* ZWIntroductionViewController.m in Sources */,
+				FCD666E32215383F007E39C6 /* XHLabel.m in Sources */,
 				FC258B4421F028FF00B80DC0 /* TouchID.m in Sources */,
 				FC258B3D21F028FF00B80DC0 /* AppBaseTableViewCell.m in Sources */,
 				FC258B3221F028FF00B80DC0 /* XHShowTimePicker.m in Sources */,
@@ -854,6 +860,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U9RUM2TV79;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Tmeplateform_App/Project/Utils/Prefix/PrefixHeader.pch";
 				INFOPLIST_FILE = Tmeplateform_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -872,6 +879,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U9RUM2TV79;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Tmeplateform_App/Project/Utils/Prefix/PrefixHeader.pch";
 				INFOPLIST_FILE = Tmeplateform_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

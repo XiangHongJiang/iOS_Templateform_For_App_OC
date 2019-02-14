@@ -63,7 +63,7 @@
     if ([AppManager instance].userLoginInfo.userId.length) {//已登录
         
         [self setAdControlIsRootWithType:NO];
-        
+        //
     } else {//未登录，不出广告
         
         [self setLoginIsRoot];
