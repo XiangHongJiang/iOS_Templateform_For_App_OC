@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F4D92D9375649410A34D2D50 /* libPods-Tmeplateform_App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE75C542EF2AFA449F4F445 /* libPods-Tmeplateform_App.a */; };
 		FC258A5921F0283400B80DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258A5821F0283400B80DC0 /* AppDelegate.m */; };
-		FC258A5F21F0283400B80DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC258A5D21F0283400B80DC0 /* Main.storyboard */; };
 		FC258A6121F0283900B80DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC258A6021F0283900B80DC0 /* Assets.xcassets */; };
 		FC258A6421F0283900B80DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC258A6221F0283900B80DC0 /* LaunchScreen.storyboard */; };
 		FC258A6721F0283900B80DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC258A6621F0283900B80DC0 /* main.m */; };
@@ -55,10 +54,10 @@
 		27A97694959BFEEF2E699F5C /* Pods-Tmeplateform_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tmeplateform_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App.release.xcconfig"; sourceTree = "<group>"; };
 		6FE75C542EF2AFA449F4F445 /* libPods-Tmeplateform_App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tmeplateform_App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99978248E7BD0319053B505A /* Pods-Tmeplateform_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tmeplateform_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App.debug.xcconfig"; sourceTree = "<group>"; };
+		F71E688D25A873490031C3C2 /* Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
 		FC258A5421F0283400B80DC0 /* Tmeplateform_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tmeplateform_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC258A5721F0283400B80DC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC258A5821F0283400B80DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC258A5E21F0283400B80DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC258A6021F0283900B80DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC258A6321F0283900B80DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC258A6521F0283900B80DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +169,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F703932025B169E70012B6A0 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FC258A5721F0283400B80DC0 /* AppDelegate.h */,
+				FC258A5821F0283400B80DC0 /* AppDelegate.m */,
+			);
+			name = Appdelegate;
+			sourceTree = "<group>";
+		};
+		F71E688C25A873210031C3C2 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F71E688D25A873490031C3C2 /* Interface.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		FC258A4B21F0283400B80DC0 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 		FC258A5621F0283400B80DC0 /* Tmeplateform_App */ = {
 			isa = PBXGroup;
 			children = (
+				F703932025B169E70012B6A0 /* Appdelegate */,
 				FC258A6F21F028FF00B80DC0 /* Project */,
 				FC258A6E21F0284B00B80DC0 /* Applications */,
 			);
@@ -200,9 +217,6 @@
 		FC258A6E21F0284B00B80DC0 /* Applications */ = {
 			isa = PBXGroup;
 			children = (
-				FC258A5721F0283400B80DC0 /* AppDelegate.h */,
-				FC258A5821F0283400B80DC0 /* AppDelegate.m */,
-				FC258A5D21F0283400B80DC0 /* Main.storyboard */,
 				FC258A6021F0283900B80DC0 /* Assets.xcassets */,
 				FC258A6221F0283900B80DC0 /* LaunchScreen.storyboard */,
 				FC258A6521F0283900B80DC0 /* Info.plist */,
@@ -364,6 +378,7 @@
 		FC258AD021F028FF00B80DC0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F71E688C25A873210031C3C2 /* Interface */,
 				FC258AD121F028FF00B80DC0 /* Prefix */,
 				FC258AD721F028FF00B80DC0 /* NetWork */,
 				FC258ADA21F028FF00B80DC0 /* XHTools */,
@@ -620,7 +635,6 @@
 				FC258B2F21F028FF00B80DC0 /* LaunchGuideImage_0.png in Resources */,
 				FC258A6421F0283900B80DC0 /* LaunchScreen.storyboard in Resources */,
 				FC258A6121F0283900B80DC0 /* Assets.xcassets in Resources */,
-				FC258A5F21F0283400B80DC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,22 +669,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tmeplateform_App/Pods-Tmeplateform_App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -723,14 +730,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FC258A5D21F0283400B80DC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC258A5E21F0283400B80DC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC258A6221F0283900B80DC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

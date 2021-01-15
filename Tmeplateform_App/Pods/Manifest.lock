@@ -19,6 +19,20 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.3)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - OpenShare (0.0.1)
+  - RESideMenu (4.0.7)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -30,16 +44,22 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - MMDrawerController
+  - OpenShare
+  - RESideMenu
   - YYKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - DZNEmptyDataSet
     - IQKeyboardManager
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - MMDrawerController
+    - OpenShare
+    - RESideMenu
     - YYKit
 
 SPEC CHECKSUMS:
@@ -49,8 +69,11 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: f7899a8042b4f7c014d920b3b01d6571a60cf3be
+PODFILE CHECKSUM: 9ef34e53e47a6cf5ac2712c8c1dd50e6089ad44c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.0

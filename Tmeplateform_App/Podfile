@@ -15,5 +15,8 @@ target 'Tmeplateform_App' do
     pod 'MBProgressHUD'
     #空数据视图
     pod 'DZNEmptyDataSet'
-
+    #抽屉效果：4.0.7
+    pod 'RESideMenu'
+    pod 'MMDrawerController'
+    pod 'OpenShare'
 end

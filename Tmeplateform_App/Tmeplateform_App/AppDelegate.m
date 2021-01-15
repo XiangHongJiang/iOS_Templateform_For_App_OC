@@ -11,8 +11,9 @@
 #import "ZWIntroductionViewController.h"
 #import "XHAdViewController.h"
 #import "LoginVC.h"
-
-
+#import <RESideMenu/RESideMenu.h>
+#import <MMDrawerController/MMDrawerController.h>
+#import <OpenShareHeader.h>
 @interface AppDelegate ()
 
 @end
@@ -35,6 +36,7 @@
     [self configWindow];
     
     //例如1.配置三方
+//    [self configOpenShare];
     
     //例如2.其他操作
     
@@ -103,8 +105,41 @@
 - (void)setTabBarIsRoot {
     
     Class mainClass = NSClassFromString(@"AppMainViewController");
-    self.window.rootViewController = [[mainClass alloc] init];
+    Class FirstVCClass = NSClassFromString(@"FirstVC");
     
+//    RESideMenu *mmDraw = [[RESideMenu alloc] initWithContentViewController:[mainClass new] leftMenuViewController:[FirstVCClass new] rightMenuViewController:nil];
+//
+//    mmDraw.scaleMenuView = NO;
+//    mmDraw.scaleContentView = NO;
+//    mmDraw.contentViewShadowEnabled = YES;
+//    mmDraw.contentViewShadowColor = [UIColor grayColor];
+    
+    
+    MMDrawerController *mmDraw = [[MMDrawerController alloc] initWithCenterViewController:[mainClass new] leftDrawerViewController:[FirstVCClass new]];
+    mmDraw.showsShadow = YES;
+    
+    [mmDraw setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+
+    
+    self.window.rootViewController = mmDraw;//[[mainClass alloc] init];
+    
+}
+- (void)configOpenShare {
+    //第一步：注册key
+    [OpenShare connectQQWithAppId:@"1103194207"];
+    [OpenShare connectWeiboWithAppKey:@"402180334"];
+    [OpenShare connectWeixinWithAppId:@"wxd930ea5d5a258f4f"];
+    [OpenShare connectRenrenWithAppId:@"228525" AndAppKey:@"1dd8cba4215d4d4ab96a49d3058c1d7f"];
+    [OpenShare connectAlipay];//支付宝参数都是服务器端生成的，这里不需要key.
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    //第二步：添加回调
+    if ([OpenShare handleOpenURL:url]) {
+        return YES;
+    }
+    //这里可以写上其他OpenShare不支持的客户端的回调，比如支付宝等。
+    return YES;
 }
 #pragma mark - 引导图
 - (ZWIntroductionViewController *)addGuideView
